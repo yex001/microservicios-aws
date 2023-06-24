@@ -41,7 +41,8 @@ document.getElementById('ingresar-formulario').addEventListener('submit', functi
         if (result.statusCode === 200) {
         // Redirigir al usuario a otra página en caso de inicio de sesión exitoso
         localStorage.setItem('username', userData.username);
-        window.location.href = './juego.html';
+        window.location.href = '/juego.html';
+        console.log('no salió de la página');
         } else {
         // Mostrar un mensaje de alerta en caso de error de inicio de sesión
         console.log(result)
