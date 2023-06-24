@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="flex h-screen">
+      <div class="w-1/2 flex items-center justify-center bg-black">
+        <h1 class="text-6xl text-white">42</h1>
+      </div>
+      <div class="w-1/2 flex flex-col items-center justify-center">
+        <div class="mb-4">
+          <input type="text" class="px-4 py-2 border border-gray-300 rounded-lg" placeholder="Ingrese un número">
+        </div>
+        <div class="mb-4">
+          <button class="px-6 py-3 bg-pink-500 text-white rounded-lg">Jugar</button>
+        </div>
+        <p class="text-xl">Saldo: $0</p>
+      </div>
+    </div>
+    <script src="./juego.js"></script>
+  </body>
+</html>
