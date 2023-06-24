@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const numberInput = document.querySelector('input[type="text"]');
     const playButton = document.querySelector('button');
     const saldoElement = document.querySelector('p');
-  
+    const numero = document.querySelector('h1');
+
     // Obtener el nombre de usuario del localStorage
     const username = localStorage.getItem('username');
   
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(result => {
         // Actualizar saldo y mostrar mensaje
         saldoElement.textContent = 'Saldo: $' + result.saldo;
+        numero.textContent = 'Número: ' + result.random_number;
         alert(result.message);
       })
       .catch(error => {
@@ -43,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Mostrar el nombre de usuario y saldo inicial
     document.querySelector('.username').textContent = 'Usuario: ' + username;
-    saldoElement.textContent = 'Saldo: $0';
+    saldoElement.textContent = 'Saldo: $';
   });
   
