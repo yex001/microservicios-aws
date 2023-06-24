@@ -44,6 +44,9 @@ document.getElementById('ingresar-formulario').addEventListener('submit', functi
         window.location.href = './juego.html';
         } else {
         // Mostrar un mensaje de alerta en caso de error de inicio de sesión
+        console.log(result)
+        console.log(result.body)
+        console.log(result.JSON)
         alert(result.body.message);
         }
     })
