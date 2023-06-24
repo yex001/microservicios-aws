@@ -38,7 +38,7 @@ document.getElementById('ingresar-formulario').addEventListener('submit', functi
     })
     .then(response => response.json())
     .then(result => {
-        if (result.statusCode === 200) {
+        if(result.message === 'Inicio de sesión exitoso') {
         // Redirigir al usuario a otra página en caso de inicio de sesión exitoso
         localStorage.setItem('username', userData.username);
         window.location.href = '/juego.html';
